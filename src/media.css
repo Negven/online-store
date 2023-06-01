@@ -1,0 +1,62 @@
+@media screen and (max-width: 1420px) {
+    html {
+        font-size: 8px;
+    }
+    .wrapper {
+        width: 700px;
+    }
+    .filter {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        width: 200px;
+        height: 400px;
+    }
+    .items-container {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: fit-content;
+    }
+    .filter__line {
+        border-top: 3px solid #000;
+    }
+    .button-container {
+        flex-direction: column;
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+
+    .button-container__button-value {
+        margin-top: 5px;
+    }
+
+    .main {
+        height: min-content;
+        grid-template-rows: auto;
+    }
+
+    .card {
+        width: 155px;
+        height: 330px;
+    }
+
+    .card__in-cart {
+        top: -287px;
+        left: 59px;
+    }
+
+    .filter__search, .filter__select {
+        width: 185px;
+    }
+
+    .delete-btn {
+        margin-top: -55px;
+        margin-left: 185px;
+    }
+
+    .cart__item-counter {
+        width: 20px;
+        height: 20px;
+    }
+}

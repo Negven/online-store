@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <base target="_blank">
+</head>
+<body>
+    <header class="header wrapper">
+        <div class="logo">
+            <h1>SHOP</h1>
+        </div>
+        <div class="cart">
+            <div class="cart__item-counter">
+                0
+            </div>
+            <img class="cart__img" src="img/cart-icon.png" alt="Корзина">
+        </div>
+    </header>
+    <main class="main wrapper">
+        <section class="filter">
+            <h2>Фильтры по значению</h2>
+            <div class="filter__line">
+                <p class="filter__paragraph">Марка:</p>
+                <div class="button-container">
+                    <div class="button-container__button-value">
+                        <div class="company-logo company-logo1" data-filter="brand=Audi"></div>
+                    </div>
+                    <div class="button-container__button-value">
+                        <div class="company-logo company-logo2" data-filter="brand=BMW"></div>
+                    </div>
+                    <div class="button-container__button-value">
+                        <div class="company-logo company-logo3" data-filter="brand=Mercedes benz"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__line">
+                <p class="filter__paragraph">Тип:</p>
+                <div class="button-container">
+                    <div class="button-container__button-value">
+                        <div class="item-type" data-filter="type=кабриолет">Кабриолет</div>
+                    </div>
+                    <div class="button-container__button-value">
+                        <div class="item-type" data-filter="type=джип">Джип</div>
+                    </div>
+                    <div class="button-container__button-value">
+                        <div class="item-type" data-filter="type=спорткар">Спорткар</div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__line">
+                <p class="filter__paragraph">Цвет:</p>
+                <div class="button-container">
+                    <div class="button-container__button-value">
+                        <div class="item-color item-color1" data-filter="color=зеленый"></div>
+                    </div>
+                    <div class="button-container__button-value">
+                        <div class="item-color item-color2" data-filter="color=желтый"></div>
+                    </div>
+                    <div class="button-container__button-value">
+                        <div class="item-color item-color3" data-filter="color=синий"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__line">
+                <p class="filter__paragraph">Только популярные:</p>
+                <div class="button-container__button-value">
+                    <input type="checkbox" class="filter__checkbox">
+                </div>
+            </div>
+        </section>
+        <section class="filter">
+            <h2>Фильтры по значению</h2>
+            <p class="filter__paragraph">Количество на складе:</p>
+            <div class="slider" id="sliderCounts"></div>
+            <p class="filter__paragraph">Год выхода на рынок:</p>
+            <div class="slider" id="sliderYear"></div>
+        </section>
+        <section class="filter">
+            <h2>Поиск</h2>
+            <input autofocus placeholder="Введите текст" class="filter__search">
+            <span class="delete-btn"></span>
+            <h2 class="filter__sort">Сортировка</h2>
+            <select class="filter__select">
+                <option value="fromAtoZ">По названию, от А до Я</option>
+                <option value="fromZtoA">По названию, от Я до А</option>
+                <option value="byYearToUp">По году, по возрастанию</option>
+                <option value="byYearToDown">По году, по убыванию</option>
+                <option value="byCountToUp">По количеству, по возрастанию</option>
+                <option value="byCountToDown">По количеству, по убыванию</option>
+            </select>
+            <button id="deleteFilters" class="filter__button">Сброс фильтров</button>
+            <button id="deleteStorage" class="filter__button">Сброс настроек</button>
+        </section>
+        <section class="items-container">
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="contacts">
+            <a class="footer__link" href="https://github.com/Negven">My gitHub</a>
+            <p class="footer__paragraph">2022</p>
+        </div>
+        <div class="contacts">
+            <a class="footer__link" href="https://rs.school/js/">
+                <img class="rs-logo" src="https://rs.school/images/rs_school_js.svg" alt="Логотип курсов">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
